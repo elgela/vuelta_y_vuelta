@@ -31,11 +31,18 @@ h6,
     font-style: normal;
 }
 
+#logo {
+    width: auto;
+    height: 100px;
+}
+
+
+
 @media (min-width: 992px) {
     .display-1 {
         font-size: 7rem;
     }
-}
+    }
 
 .btn {
     font-family: "Emblema One", system-ui;
@@ -265,4 +272,10 @@ h6,
     .credit {
         background: #111111;
     }
+
+    #logo {
+        width: 300px;
+        height: 140px;
+    }
+
 }
