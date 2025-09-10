@@ -37,7 +37,6 @@ h6,
 }
 
 
-
 @media (min-width: 992px) {
     .display-1 {
         font-size: 7rem;
@@ -278,4 +277,10 @@ h6,
         height: 140px;
     }
 
+}
+
+@media (max-width: 200px) {
+    #logo {
+        display: none;
+    }
 }
