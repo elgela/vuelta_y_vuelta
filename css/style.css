@@ -36,6 +36,11 @@ h6,
     height: 100px;
 }
 
+.fa-whatsapp {
+    color: rgb(246, 248, 246);
+    font-size: xx-large;
+    
+}
 
 @media (min-width: 992px) {
     .display-1 {
