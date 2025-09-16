@@ -5,18 +5,13 @@
     "display": "standalone",
     "icons": [
         {
-            "src": "/img/favicon/ms-icon-512x512",
+            "src": "/img/favicon/ms-icon-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
         },
         {
-            "src": "/img/favicon/android-icon-192.png",
+            "src": "/img/favicon/ms-icon-192x192.png",
             "sizes": "192x192",
-            "type": "image/png"
-        },
-        {
-            "src": "/img/favicon/ms-icon-310x310.png",
-            "sizes": "310x310",
             "type": "image/png"
         },
         {
@@ -30,9 +25,9 @@
             "type": "image/png"
         },
         {
-            "src": "img/favicon/ms-icon-70x70.png",
+            "src": "img/favicon/ms-icon-72x72.png",
             "type": "image/png",
-            "sizes": "70x70"
+            "sizes": "72x72"
         }
     ]
 }
