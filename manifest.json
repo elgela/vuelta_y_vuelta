@@ -1,6 +1,6 @@
 {
-    "name": "Vuelta&Vuelta",
-    "short_name": "V&V",
+    "name": "Vuelta&Vuelta Restaurant",
+    "short_name": "Vuelta&Vuelta",
     "start_url": "./index.html",
     "display": "standalone",
     "icons": [
