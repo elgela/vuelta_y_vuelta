@@ -117,15 +117,15 @@
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto py-0">
                             <a href="index.html" class="nav-item nav-link">Inicio</a>
-                            <a href="about.html" class="nav-item nav-link">Nosotros</a>
-                            <a href="menu.html" class="nav-item nav-link">Menú</a>
-                            <a href="team.html" class="nav-item nav-link">Chefs</a>
+                            <a href="#nosotros" class="nav-item nav-link">Nosotros</a>
+                            <a href="#menu" class="nav-item nav-link">Menú</a>
+                            <a href="#chef" class="nav-item nav-link">Chefs</a>
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Páginas</a>
                                 <div class="dropdown-menu rounded-0 m-0">
-                                    <a href="feature.html" class="dropdown-item">Características</a>
-                                    <a href="blog.html" class="dropdown-item">Blog Post</a>
-                                    <a href="testimonial.html" class="dropdown-item">Testimonios</a>
+                                    <a href="#features" class="dropdown-item">Características</a>
+                                    <a href="#blog" class="dropdown-item">Blog Post</a>
+                                    <a href="#testimonios" class="dropdown-item">Testimonios</a>
                                     <!-- <a href="404.html" class="dropdown-item">404 Error</a> -->
                                 </div>
                             </div>
@@ -205,7 +205,7 @@
                         src="img/about.jpg" style="object-fit: cover;">
                 </div>
             </div>
-            <div class="col-lg-7">
+            <div class="col-lg-7" id="nosotros">
                 <div class="mb-4 wow fadeIn" data-wow-delay="0.2s">
                     <h5 class="section-title">Quienes somos</h5>
                     <h1 class="display-3 mb-0">Cocinando junto al experto</h1>
@@ -302,7 +302,7 @@
 
 
     <!-- Feature Start -->
-    <div class="container-fluid feature position-relative p-5 pb-0 mt-5">
+    <div class="container-fluid feature position-relative p-5 pb-0 mt-5" id="features">
         <div class="row g-5 gb-5">
             <div class="col-lg-4 col-md-6 wow fadeIn" data-wow-delay="0.1s">
                 <div class="feature-item rounded text-center p-5">
@@ -345,7 +345,7 @@
 
 
     <!-- Menu Start -->
-    <div class="container-fluid menu py-5 px-0">
+    <div class="container-fluid menu py-5 px-0" id="menu">
         <div class="mb-5 text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px; margin: auto;">
             <h5 class="section-title">Nuestro Menú</h5>
             <h1 class="display-3 mb-0">Manos que hacen grandes comidas</h1>
@@ -404,7 +404,7 @@
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6 wow fadeIn" data-wow-delay="0.4s">
                             <div class="position-relative">
-                                <img class="img-fluid" src="img/Menu/Milanesas.jpg" alt="milanesas">
+                                <img class="img-fluid" src="img/Menu/menu_imfantil.jpg" alt="milanesas">
                                 <!-- <div class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">Milanesas</div> -->
                             </div>
                         </div>
@@ -418,7 +418,7 @@
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6 wow fadeIn" data-wow-delay="0.8s">
                             <div class="position-relative">
-                                <img class="img-fluid" src="img/Menu/carne_papas.jpg" alt="carne y papas">
+                                <img class="img-fluid" src="img/Menu/panchos.jpg" alt="carne y papas">
                                 <!-- <div class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">Carne / Papas</div> -->
                             </div>
                         </div>
@@ -549,9 +549,9 @@
 
 
     <!-- Team Start -->
-    <div class="container-fluid p-5">
+    <div class="container-fluid p-5" id="chef">
         <div class="mb-5 text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px; margin: auto;">
-            <h5 class="section-title">Expertos Chefs</h5>
+            <h5 class="section-title">Nuestros Chefs</h5>
             <h1 class="display-3 mb-0">Conozcamos a los expertos</h1>
         </div>
         <div class="row g-5">
@@ -627,7 +627,7 @@
 
 
     <!-- Testimonial Start -->
-    <div class="container-fluid p-0 my-5">
+    <div class="container-fluid p-0 my-5" id="testimonios">
         <div class="row g-0">
             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" style="min-height: 500px;">
                 <div class="h-100 position-relative overflow-hidden" style="border-top-left-radius: 50%;">
@@ -675,7 +675,7 @@
 
 
     <!-- Blog Start -->
-    <div class="container-fluid p-5">
+    <div class="container-fluid p-5" id="blog">
         <div class="mb-5 text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px; margin: auto;">
             <h5 class="section-title">Nuestro Blog</h5>
             <h1 class="display-3 mb-0">Últimos artículos del blog de comida</h1>
@@ -684,45 +684,54 @@
             <div class="col-lg-4 col-md-6 wow fadeIn" data-wow-delay="0.1s">
                 <div class="blog-item">
                     <div class="position-relative overflow-hidden rounded-top">
-                        <img class="img-fluid" src="img/menu-3.jpg" alt="">
+                        <img class="img-fluid" src="img/Blog/albondigas_con_tuco.jpg" alt="">
                     </div>
                     <div class="bg-dark d-flex align-items-center rounded-bottom p-4">
                         <div class="flex-shrink-0 text-center text-secondary border-end border-secondary pe-3 me-3">
-                            <span>01</span>
-                            <h6 class="text-primary text-uppercase mb-0">January</h6>
-                            <span>2045</span>
+                            <span>15</span>
+                            <h6 class="text-primary text-uppercase mb-0">Sept</h6>
+                            <span>2025</span>
                         </div>
-                        <a class="h5 lh-base text-light" href="">Sed amet tempor amet sit kasd sea lorem</h4></a>
+                        <a class="h5 lh-base text-light" href="">
+                            <p>🍴</p>Albóndigas con tuco y puré o arroz</h4>
+                            <p>$6900</p>
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 wow fadeIn" data-wow-delay="0.3s">
                 <div class="blog-item">
                     <div class="position-relative overflow-hidden rounded-top">
-                        <img class="img-fluid" src="img/menu-5.jpg" alt="">
+                        <img class="img-fluid" src="img/Blog/torre_primavera.jpg" alt="">
                     </div>
                     <div class="bg-dark d-flex align-items-center rounded-bottom p-4">
                         <div class="flex-shrink-0 text-center text-secondary border-end border-secondary pe-3 me-3">
-                            <span>01</span>
-                            <h6 class="text-primary text-uppercase mb-0">January</h6>
-                            <span>2045</span>
+                            <span>15</span>
+                            <h6 class="text-primary text-uppercase mb-0">Sept</h6>
+                            <span>2025</span>
                         </div>
-                        <a class="h5 lh-base text-light" href="">Sed amet tempor amet sit kasd sea lorem</h4></a>
+                        <a class="h5 lh-base text-light" href="">
+                            <p>🍴</p>Torre primavera con ensalada</h4>
+                            <p>$6900</p>
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 wow fadeIn" data-wow-delay="0.5s">
                 <div class="blog-item">
                     <div class="position-relative overflow-hidden rounded-top">
-                        <img class="img-fluid" src="img/menu-7.jpg" alt="">
+                        <img class="img-fluid" src="img/Blog/napolitana_papas.jpg" alt="">
                     </div>
                     <div class="bg-dark d-flex align-items-center rounded-bottom p-4">
                         <div class="flex-shrink-0 text-center text-secondary border-end border-secondary pe-3 me-3">
-                            <span>01</span>
-                            <h6 class="text-primary text-uppercase mb-0">January</h6>
-                            <span>2045</span>
+                            <span>15</span>
+                            <h6 class="text-primary text-uppercase mb-0">Sept</h6>
+                            <span>2025</span>
                         </div>
-                        <a class="h5 lh-base text-light" href="">Sed amet tempor amet sit kasd sea lorem</h4></a>
+                        <a class="h5 lh-base text-light" href="">
+                            <p>🍴</p>Milanesa napolitana con papas</h4>
+                            <p>$6900</p>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -768,45 +777,45 @@
             <div class="col-lg-8 col-md-6">
                 <div class="row gx-5">
                     <div class="col-lg-4 col-md-12 pt-5 mb-5">
-                        <h3 class="text-light mb-4">Get In Touch</h3>
+                        <h3 class="text-light mb-4">Ponte en contacto</h3>
                         <div class="d-flex mb-2">
-                            <i class="bi bi-geo-alt text-primary me-2"></i>
-                            <p class="mb-0">123 Street, New York, USA</p>
+                            <i class="fa-solid fa-location-dot fa-beat-fade fa-lg text-primary me-2"></i>
+                            <p class="mb-0">Rivadavia 211, Tandil, Bs. As.</p>
                         </div>
                         <div class="d-flex mb-2">
-                            <i class="bi bi-envelope-open text-primary me-2"></i>
+                            <i class="fa-regular fa-envelope-open fa-beat-fade fa-lge text-primary me-2"></i>
                             <p class="mb-0">info@example.com</p>
                         </div>
                         <div class="d-flex mb-2">
-                            <i class="bi bi-telephone text-primary me-2"></i>
-                            <p class="mb-0">+012 345 67890</p>
+                            <i class="fa-brands fa-whatsapp fa-beat-fade text-primary me-2"></i>
+                            <p class="mb-0">2494567863</p>
                         </div>
                         <div class="d-flex mt-4">
-                            <a class="btn btn-primary btn-square rounded-circle me-2" href="#"><i
-                                    class="fab fa-twitter"></i></a>
-                            <a class="btn btn-primary btn-square rounded-circle me-2" href="#"><i
+                            <!-- <a class="btn btn-primary btn-square rounded-circle me-2" href="#"><i
+                                    class="fab fa-twitter"></i></a> -->
+                            <a class="btn btn-primary btn-square rounded-circle me-2" href="https://www.facebook.com/people/Vuelta-y-Vuelta-Restaurante/100063506804709/?sk=about&locale=es_LA" target="_blank"><i
                                     class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-primary btn-square rounded-circle me-2" href="#"><i
-                                    class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-primary btn-square rounded-circle" href="#"><i
+                            <!-- <a class="btn btn-primary btn-square rounded-circle me-2" href="#"><i
+                                    class="fab fa-linkedin-in"></i></a> -->
+                            <a class="btn btn-primary btn-square rounded-circle" href="https://www.instagram.com/vueltayvueltarestaurante/" target="_blank"><i
                                     class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
                         <h3 class="text-light mb-4">Quick Links</h3>
                         <div class="d-flex flex-column justify-content-start">
-                            <a class="text-secondary mb-2" href="#"><i
-                                    class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                            <a class="text-secondary mb-2" href="#"><i
-                                    class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                            <a class="text-secondary mb-2" href="#"><i
-                                    class="bi bi-arrow-right text-primary me-2"></i>Food Menu</a>
-                            <a class="text-secondary mb-2" href="#"><i
-                                    class="bi bi-arrow-right text-primary me-2"></i>Our Chefs</a>
-                            <a class="text-secondary mb-2" href="#"><i
-                                    class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
-                            <a class="text-secondary" href="#"><i
-                                    class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                            <a class="text-secondary mb-2" href="index.html"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>Inicio</a>
+                            <a class="text-secondary mb-2" href="#nosotros"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>Nosotros</a>
+                            <a class="text-secondary mb-2" href="#menu"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>Menú</a>
+                            <a class="text-secondary mb-2" href="#chef"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>Chefs</a>
+                            <a class="text-secondary mb-2" href="#blog"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>Blog</a>
+                            <a class="text-secondary" href="contact.html"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>Contacto</a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
