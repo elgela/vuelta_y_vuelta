@@ -89,6 +89,12 @@ h6,
     z-index: 99;
 }
 
+.navbar-expand-lg {
+    position: fixed;
+    z-index: 100;
+    /* top: 0; */
+}
+
 .navbar-dark .navbar-nav .nav-link {
     margin-right: 30px;
     /* padding: 40px 0; */
