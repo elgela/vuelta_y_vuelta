@@ -38,8 +38,9 @@ h6,
 
 .fa-whatsapp {
     color: rgb(246, 248, 246);
-    font-size: xx-large;
-    
+    font-size: 50px;
+    position: fixed;
+    z-index: 1;
 }
 
 @media (min-width: 992px) {
