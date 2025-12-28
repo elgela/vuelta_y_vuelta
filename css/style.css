@@ -91,8 +91,11 @@ h6,
 
 .navbar-expand-lg {
     position: fixed;
-    z-index: 100;
-    /* top: 0; */
+    z-index: 1030; /* más alto para permanecer encima del contenido */
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -157,6 +160,54 @@ h6,
         top: 0px;
     } 
 }
+
+/* 🔧 Evito línea blanca: el hero se encarga de su propio offset, body no tiene padding */
+body {
+    padding-top: 0;
+}
+
+/* Ajuste del header para que logo y primera fila no queden tapados por la navbar fija */
+.header-top {
+    padding-top: 120px; /* desktop: suficiente para que el logo quede visible bajo la navbar */
+}
+@media (max-width: 991.98px) {
+    .header-top { padding-top: 60px; }
+    /* En pantallas pequeñas la navbar será sticky para no tapar contenido */
+    .navbar-expand-lg {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 1030; /* mantenerse encima */
+        width: 100%;
+    }
+} 
+@media (max-width: 575.98px) {
+    .header-top { padding-top: 20px; }
+}
+
+/* Soporte dinámico: variable por defecto, será sobreescrita por JS según la altura real de la navbar */
+:root {
+    --nav-offset: 220px; /* fallback aumentado */
+}
+
+/* Espacio dentro del hero para separar título y contenidos (responsive) */
+.hero-section {
+    padding-top: calc(var(--nav-offset) + 20px); /* se suman 20px extra */
+}
+@media (max-width: 991.98px) {
+    .hero-section { padding-top: calc(var(--nav-offset) + 10px); }
+}
+@media (max-width: 575.98px) {
+    .hero-section { padding-top: calc(var(--nav-offset) + 40px); }
+    /* Revertimos la reducción: dejamos H1 más grande (mejor legibilidad) */
+    .hero-section .display-1 {
+        font-size: 3rem;
+        line-height: 1.02;
+        letter-spacing: 0.02em;
+        margin-top: 0;
+        margin-bottom: .5rem;
+    }
+} 
 
 .animate-rotate {
     position: absolute;

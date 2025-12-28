@@ -80,7 +80,7 @@
 
 
     <!-- Header Start -->
-    <div class="container-fluid bg-dark px-0">
+    <div class="container-fluid bg-dark px-0 header-top">
         <div class="row gx-0 wow fadeIn" data-wow-delay="0.1s">
             <div class="col-lg-3 d-none d-lg-block">
                 <a href="index.html"
@@ -154,7 +154,7 @@
 
 
     <!-- Hero Start -->
-    <div class="container-fluid p-5 mb-5 bg-dark text-secondary">
+    <div class="container-fluid p-5 mb-5 bg-dark text-secondary hero-section">
         <div class="row g-5 py-5">
             <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
                 <h1 class="display-1 text-secondary text-center mb-0">Vuelta & Vuelta</h1>
@@ -908,6 +908,41 @@
                 .then(reg => console.log('Service Worker registrado', reg))
                 .catch(err => console.error('Error al registrar SW', err));
         }
+    </script>
+
+    <!-- Ajusta dinámicamente el offset del hero según la altura real de la navbar -->
+    <script>
+        function adjustHeroOffset() {
+            var nav = document.querySelector('.navbar-expand-lg');
+            var headerTop = document.querySelector('.header-top');
+            var navHeight = 0;
+            if (nav) {
+                navHeight = Math.ceil(nav.getBoundingClientRect().height);
+            }
+            // Si hay un header-top con padding extra, se suma su padding-top (desktop logo area)
+            if (headerTop && window.innerWidth > 991.98) {
+                var style = window.getComputedStyle(headerTop);
+                var extra = parseInt(style.paddingTop) || 0;
+                navHeight = Math.max(navHeight, navHeight + extra);
+            }
+            // Añadimos un pequeño extra para separación; en móviles más espacio
+            // Añadimos un extra para separación; en móviles aplicamos offset sin sumar navHeight (navbar es sticky)
+            if (window.innerWidth <= 991.98) {
+                // Sticky navbar: no sumar la altura medida (ya está en el flujo), usamos un offset fijo para móviles
+                var extraOffset = window.innerWidth <= 575.98 ? 80 : 40;
+                var manualExtra = window.innerWidth <= 575.98 ? 140 : 60; // más espacio en móviles pequeños
+                var total = extraOffset + manualExtra;
+            } else {
+                var extraOffset = 20;
+                var manualExtra = 50;
+                var total = navHeight + extraOffset + manualExtra;
+            }
+            document.documentElement.style.setProperty('--nav-offset', total + 'px');
+        }
+
+        window.addEventListener('DOMContentLoaded', adjustHeroOffset);
+        window.addEventListener('load', adjustHeroOffset);
+        window.addEventListener('resize', function () { setTimeout(adjustHeroOffset, 50); });
     </script>
 </body>
 
