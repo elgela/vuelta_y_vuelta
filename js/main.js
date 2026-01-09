@@ -64,3 +64,32 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+////////// envio mail desde formulario ///////////////
+const form = document.getElementById("contact-form");
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const data = {
+    nombre: form.name.value,
+    email: form.email.value,
+    asunto: form.asunto.value,
+    message: form.message.value
+  };
+
+  const res = await fetch("https://formspree.io/f/meeoyynw", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    },
+    body: JSON.stringify(data)
+  });
+
+  if (res.ok) {
+    alert("¡Mensaje enviado con éxito!");
+    form.reset();
+  } else {
+    alert("Error al enviar el mensaje.");
+  }
+});

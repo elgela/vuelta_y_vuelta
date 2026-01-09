@@ -191,23 +191,23 @@
             <div class="col-lg-6">
                 <div class="bg-light rounded h-100 p-5">
                     <h3>Escríbanos...</h3>
-                    <form method="POST" action="/escribir.php">
+                    <form id="contact-form">
                         <div class="row g-3">
                             <div class="col-6">
-                                <input type="text" class="form-control bg-white border-0 px-4" placeholder="Su nombre"
+                                <input type="text" name="name" class="form-control bg-white border-0 px-4" placeholder="Su nombre"
                                     style="height: 55px;">
                             </div>
                             <div class="col-6">
-                                <input type="email" class="form-control bg-white border-0 px-4" placeholder="Su email"
+                                <input type="email" name="email" class="form-control bg-white border-0 px-4" placeholder="Su email"
                                     style="height: 55px;">
                             </div>
                             <div class="col-12">
-                                <input type="text" class="form-control bg-white border-0 px-4" placeholder="Asunto"
+                                <input type="text" name="asunto" class="form-control bg-white border-0 px-4" placeholder="Asunto"
                                     style="height: 55px;">
                             </div>
                             <div class="col-12">
                                 <textarea class="form-control bg-white border-0 px-4 py-3" rows="4"
-                                    placeholder="Mensaje"></textarea>
+                                    placeholder="Mensaje" name="message"></textarea>
                             </div>
                             <div class="col-12">
                                 <!-- <p>en desarrollo...</p> -->
