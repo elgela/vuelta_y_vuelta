@@ -3,6 +3,9 @@
     "short_name": "Vuelta & Vuelta",
     "start_url": "./index.html",
     "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+
     "icons": [
         {
             "src": "./img/favicon/ms-icon-512x512.png",

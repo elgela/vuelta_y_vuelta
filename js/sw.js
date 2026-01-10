@@ -1,12 +1,9 @@
 ////////////service worker//////////////
 
-// service-worker.js
 self.addEventListener('install', event => {
-  console.log('Service Worker instalado');
+  console.log("SW instalado");
 });
 
-self.addEventListener('fetch', event => {
-  event.respondWith(fetch(event.request));
+self.addEventListener('activate', event => {
+  console.log("SW activado");
 });
-
-navigator.serviceWorker.register('./sw.js')
