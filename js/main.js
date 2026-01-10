@@ -77,7 +77,7 @@ form.addEventListener("submit", async (e) => {
     message: form.message.value
   };
 
-  const res = await fetch("https://formspree.io/f/meeoyynw", {
+  const res = await fetch("https://formspree.io/f/mbddrykj", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
