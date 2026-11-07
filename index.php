@@ -83,14 +83,14 @@
     <div class="container-fluid bg-dark px-0 header-top">
         <div class="row gx-0 wow fadeIn" data-wow-delay="0.1s">
             <div class="col-lg-3 d-none d-lg-block">
-                <a href="index.html"
+                <a href="index.php"
                     class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
                     <img src="img/logo.png" alt="logo_vuelta_y_vuelta" id="logo">
                 </a>
             </div>
             <div class="col-lg-9">
                 <nav class="navbar navbar-expand-lg navbar-dark p-3 p-lg-0 px-lg-5" style="background: #111111;">
-                    <a href="index.html" class="navbar-brand d-block d-lg-none">
+                    <a href="index.php" class="navbar-brand d-block d-lg-none">
                         <img src="img/logo.png" alt="logo_vuelta_y_vuelta" id="logo">
                     </a>
                     <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
@@ -99,7 +99,7 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto py-0">
-                            <a href="index.html" class="nav-item nav-link">Inicio</a>
+                            <a href="index.php" class="nav-item nav-link">Inicio</a>
                             <a href="#nosotros" class="nav-item nav-link">Nosotros</a>
                             <a href="#menu" class="nav-item nav-link">Menú</a>
                             <a href="#chef" class="nav-item nav-link">Chefs</a>
@@ -813,7 +813,7 @@
                     <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
                         <h3 class="text-light mb-4">Quick Links</h3>
                         <div class="d-flex flex-column justify-content-start">
-                            <a class="text-secondary mb-2" href="index.html"><i
+                            <a class="text-secondary mb-2" href="index.php"><i
                                     class="bi bi-arrow-right text-primary me-2"></i>Inicio</a>
                             <a class="text-secondary mb-2" href="#nosotros"><i
                                     class="bi bi-arrow-right text-primary me-2"></i>Nosotros</a>
